@@ -13,7 +13,7 @@ jobs:
     steps:
 
     - name: ↩️ Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: 📂 Detect chanced addons
       uses: dorny/paths-filter@v2
@@ -59,7 +59,7 @@ jobs:
     steps:
 
       - name: ↩️ Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: 🔎 Check if versions of CHANGELOG.md and config.json match
         shell: bash
@@ -82,7 +82,7 @@ jobs:
     steps:
 
       - name: ↩️ Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: 🔎 Check if a label for the addon exists
         shell: bash
@@ -104,7 +104,7 @@ jobs:
     steps:
 
       - name: ↩️ Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: 🔎 Run Home Assistant Add-on Lint
         uses: frenck/action-addon-linter@v2
@@ -123,7 +123,7 @@ jobs:
     steps:
 
       - name: ↩️ Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: ℹ️ Gather addon info
         id: information
